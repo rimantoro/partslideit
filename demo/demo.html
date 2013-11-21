@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+<title>PartSLideIt - jQUery Plugin</title>
+
+<meta name = "keywords" content = "" />
+<meta name = "description" content = "" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+
+<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/foundation.min.css">
+<link rel="stylesheet" href="css/demo.css">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script src="js/partslideit.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready( function() {
+
+	var theoption = {
+		timing: 1500,
+    	direction: 'horizontal',
+    	pos_start: 3000,
+    	timeintv: 500
+	};
+
+	$("#slide-container").partslidit(theoption);
+
+});
+
+
+</script>
+
+</head>
+<body>
+
+
+<div class="row">
+	<div class="large-12 columns inner">
+
+		<div class="row">
+			<div class="large-6 columns partslidit" id="slide-container">
+				<div class="slidit">
+					<h1>This will slide</h1>
+				</div>
+				<div class="other-class">
+					<h1>This don't slide</h1>
+				</div>
+				<div class="slidit">
+					<h1>This will slide</h1>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>

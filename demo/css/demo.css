@@ -1,0 +1,166 @@
+body,h1,h2,h3,h4 {
+	font-family: 'Orbitron', sans-serif, Helvetica, Arial, Verdana;
+	color: #8F9C46;
+}
+
+body {
+	font-size: 14px;
+	background:#bfbfbf;
+}
+
+a { color: #8F9C46; }
+a:hover { color: #363636; }
+
+h1 { margin: 5px 20px; }
+
+.row {min-width:100% !important;}
+.floatit { float: inherit; }.left {float: left;}.right {float: right;}
+
+/* OVERRIDE FOUNDATION */
+hr {
+	border: solid #e5e5e5;
+	clear: both;
+	margin: 1.25em 0 1.1875em;
+	height: 5px;
+	border-radius: 1px;
+	background: #e5e5e5;
+}
+
+.button { 
+	background-color: #8E405A;
+	border-color: #6E405A;
+}
+.button:hover { background-color: #C67490; }
+.button-group.vert li { display: block; float: none; }
+.button.medium { min-width: 192px; }
+
+fieldset { border: solid 5px #ddd; }
+fieldset legend { background: none; }
+/* END OVERRIDE FOUNDATION */
+
+/* SECTIONS */
+.sTop {
+	min-height: 700px;
+	background: #e5e5e5 url('../assets/images/jakarta_01.jpg') 0px 0px no-repeat;
+	background-size: 100% 100%;
+	color:#3d3d3d;
+	
+}.inner { padding: 70px 50px; }
+
+.s1 {
+	min-height: 600px;
+	background: #2e2e2e url('../assets/images/jakarta_02.jpg') 0px 0px no-repeat;
+	background-size: 100% 100%;
+	color:#3d3d3d;
+}.inner { padding: 70px 50px; }
+
+.s2 {
+	min-height: 700px;
+	background: #3f3f3f url('../assets/images/jakarta_03.jpg') 0px 0px no-repeat;
+	background-size: 100% 100%;
+	color:#3d3d3d;
+}.inner { padding: 70px 50px; }
+
+
+/* MISC */
+ul.socmed {
+	list-style: none;
+}
+
+.rotated {
+	overflow: hidden;
+	display: inline-block;
+	clear: both;
+	min-width: 100px;
+	min-height: 50px;
+	background: #fff no-repeat;
+	padding: 5px 15px;
+	-webkit-box-shadow: 10px 10px 20px 2px rgba(0,0,0,0.76);
+	-moz-box-shadow: 10px 10px 20px 2px rgba(0,0,0,0.76);
+	box-shadow: 10px 10px 20px 2px rgba(0,0,0,0.76);
+}
+.rotated.r-right {
+	transform: rotate(3deg) scale(1) skew(0deg) translate(0px);
+	-webkit-transform: rotate(3deg) scale(1) skew(0deg) translate(0px);
+	-moz-transform: rotate(3deg) scale(1) skew(0deg) translate(0px);
+	-o-transform: rotate(3deg) scale(1) skew(0deg) translate(0px);
+	-ms-transform: rotate(3deg) scale(1) skew(0deg) translate(0px);
+}
+.rotated.r-left {
+	transform: rotate(-3deg) scale(1) skew(0deg) translate(0px);
+	-webkit-transform: rotate(-3deg) scale(1) skew(0deg) translate(0px);
+	-moz-transform: rotate(-3deg) scale(1) skew(0deg) translate(0px);
+	-o-transform: rotate(-3deg) scale(1) skew(0deg) translate(0px);
+	-ms-transform: rotate(-3deg) scale(1) skew(0deg) translate(0px);
+}
+
+@media only screen and (min-width: 1224px) {
+	.subMenu {
+		list-style: none;
+		position: absolute;
+		float: right;
+		top: 0px;
+		height: 43px;
+		z-index: 1000;
+		background: #8F9C46;
+		width: 100%;
+		/*
+		max-width: 1140px;
+		min-width: 960px;
+		*/
+	}
+	.subMenu li { 
+		float: left;
+		min-width: 50px;
+		min-height: 30px;
+		margin: 5px 10px;
+		padding: 5px 10px;
+		background: #fff;
+	}
+	a#pull {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.subMenu {
+		display: none;
+		background: #8F9C46;
+		position: fixed !important;
+		margin-bottom: 0px;
+		width: 100%;
+		height: initial;
+		top: 30px !important;
+		z-index: 1000;
+	}
+	.subMenu li { 
+		display: block;
+		float: none;
+		min-width: 50px;
+		min-height: 30px;
+		margin: 5px 10px;
+		padding: 5px 10px;
+		background: #fff;
+	}
+	a#pull {
+		display: block;
+		background: url('../assets/images/menu-icon.png') no-repeat;
+		width: 100%;  
+        position: fixed;
+        width: 100%;
+        height: 30px;
+        background: #8F9C46;
+        z-index: 1000;
+	}
+	a#pull:after {
+		content: "";
+        background: url('../assets/images/menu-icon.png') no-repeat;
+        width: 30px;  
+        height: 30px;  
+        display: inline-block;
+        position: fixed;  
+        right: 0px;
+        top: 10px;
+        z-index: 1000;
+	}
+}
